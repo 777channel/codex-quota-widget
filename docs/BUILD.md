@@ -43,6 +43,16 @@ dist/payload.zip            中间产物，包含代码与运行环境
 
 安装器使用当前用户权限，把文件写入 `%LOCALAPPDATA%\CodexQuotaWidget`，创建开始菜单与登录启动快捷方式，并写入当前用户的卸载信息。
 
+双击安装包后会自动完成这些配置，无需用户打开命令行或手动输入命令。登录启动项为当前用户启动文件夹中的快捷方式：
+
+```text
+%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Codex额度显示.lnk
+```
+
+快捷方式指向 `%LOCALAPPDATA%\CodexQuotaWidget\CodexQuota.exe`，参数为 `--start`。它在当前用户登录 Windows 后启动后台程序；后台程序等待 Codex 窗口出现，并在 Codex 位于前台时显示额度，隐藏后继续等待。
+
+手动从额度菜单退出会结束本次后台运行，单独重新打开 Codex 不会重新启动已退出的辅助程序；需使用开始菜单入口或等待下次 Windows 登录。卸载时会移除该快捷方式。
+
 `CodexQuota.exe --start` 使用内置 `pythonw.exe` 启动 `entry.py`。入口会限制重复启动，记录进程号，并在异常时写入 `runtime-error.log`。安装器异常记录在 `setup-error.log`。
 
 重复安装时先关闭已有的安装版本，然后更新程序文件，保留 `state.json`。卸载时移除启动入口、卸载信息和固定安装目录。
