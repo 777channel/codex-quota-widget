@@ -30,7 +30,7 @@ python -B packaging/build.py
 构建脚本根据当前解释器的位置收集运行环境，编译安装器和启动器，生成：
 
 ```text
-dist/Codex额度显示-安装.exe   对外分发的安装程序
+dist/CodexQuotaWidget-Setup.exe   对外分发的安装程序
 dist/CodexQuota.exe         安装后使用的轻量启动器
 dist/payload.zip            中间产物，包含代码与运行环境
 ```

@@ -1,6 +1,6 @@
 Codex 额度显示 1.0
 
-安装：双击“Codex额度显示-安装.exe”，自动安装并启动，不需要管理员权限或另装 Python。
+安装：双击“CodexQuotaWidget-Setup.exe”，自动安装并启动，不需要管理员权限或另装 Python。
 安装目录：%LOCALAPPDATA%\CodexQuotaWidget
 支持：Windows 10/11 x64，已安装并登录的 Codex 桌面客户端。
 

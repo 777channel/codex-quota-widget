@@ -44,6 +44,6 @@ with zipfile.ZipFile(payload, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as arc
             if file.suffix in (".pyc", ".pdb", ".chm"):
                 continue
             archive.write(file, "runtime/" + relative.as_posix())
-installer = out / "Codex额度显示-安装.exe"
+installer = out / "CodexQuotaWidget-Setup.exe"
 compile_exe(installer, payload)
 print(f"Built: {installer}\nSize: {installer.stat().st_size / 1024 / 1024:.1f} MB")
