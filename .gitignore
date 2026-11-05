@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+dist/
+runtime/
+state.json
+state.tmp
+widget.lock
+runtime.pid
+*-error.log
+installed.txt
+previous-startup.lnk
+*.lnk
+.venv/
+.vscode/
