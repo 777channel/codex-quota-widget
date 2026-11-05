@@ -31,7 +31,7 @@
 
 ## 安装使用
 
-1. 从 [下载页面](https://github.com/777channel/codex-quota-widget/releases/latest) 下载 `Codex额度显示-安装.exe`，约 15 MB。
+1. 从 [下载页面](https://github.com/777channel/codex-quota-widget/releases/latest) 下载 `CodexQuotaWidget-Setup.exe`，约 15 MB。
 2. 双击安装，完成后自动启动；支持 Windows 10 / 11 x64，无需管理员权限。
 3. 打开已登录的 Codex 桌面客户端，切到前台并等待首次读取。
 4. 位置不合适时，在额度文字上右键选择“调整位置”，移动后再选择“固定当前位置”。
